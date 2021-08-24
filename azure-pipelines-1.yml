@@ -1,0 +1,29 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: InvokeRESTAPI@1
+  inputs:
+    connectionType: 'connectedServiceNameARM'
+    azureServiceConnection: 'loadsvcdemo'
+    method: 'GET'
+    urlSuffix: 'https://testmanager-beta.azurewebsites.net/api/TestManager/GetTest?resourceId=/subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourcegroups/requestworkerdev/providers/microsoft.loadtestservice/loadtests/cloudtestres&testId=d7d7b574-bd94-43b1-b5b4-763c8a56b2d1&api_version=2020-09-01-preview'
+    waitForCompletion: 'true'
