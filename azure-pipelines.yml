@@ -24,7 +24,6 @@ jobs:
 - job: extTask
   pool: server
   steps:
-
   - task: loadTest@0
     inputs:
       azureSubscription: 'AzLoadTest'
