@@ -22,7 +22,8 @@ jobs:
     displayName: 'npm install and build'
 
 - job: extTask
-  pool: server
+  pool: 
+    vmImage: 'ubuntu-latest' 
   steps:
   - task: loadTest@0
     inputs:
