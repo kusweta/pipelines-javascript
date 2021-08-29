@@ -18,6 +18,7 @@ jobs:
 
   - script: |
       npm install
+      npm install extract-zip
       npm run build
     displayName: 'npm install and build'
 
