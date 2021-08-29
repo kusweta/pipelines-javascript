@@ -18,14 +18,9 @@ jobs:
 
   - script: |
       npm install
-      npm install extract-zip@2.0.1
       npm run build
     displayName: 'npm install and build'
 
-- job: extTask
-  pool: 
-    vmImage: 'ubuntu-latest' 
-  steps:
   - task: AzloadTest@1
     inputs:
       testname: 'azsampletest00'
