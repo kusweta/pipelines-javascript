@@ -23,7 +23,7 @@ jobs:
 
 - job: extTask
   pool: 
-    vmImage: 'ubuntu-latest' 
+    vmImage: 'server' 
   steps:
   - task: AzloadTest@1
     inputs:
