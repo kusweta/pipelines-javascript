@@ -15,18 +15,14 @@ jobs:
     inputs:
       versionSpec: '16.x'
     displayName: 'Install Node.js'
-  
-  - bash: |
-      echo $(System.DefaultWorkingDirectory)
-      echo "dfrehftrjgSFHJJKLGGFRDGBJJKUH\n"
 
 
   - task: AzloadTest@1
     inputs:
       testname: 'sampletestrun'
       tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
-      TestDrop: 'tmp'
-      TestPlan: 'valid.jmx'
+      TestDrop: ''
+      TestPlan: '/tmp/valid.jmx'
       subscription: '7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a'
       loadTestRes: 'cloudtestres'
       resourcegroup: 'requestworkerdev'
