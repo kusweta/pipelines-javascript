@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: kusweta/AzloadTest@v1
+      - uses: kusweta/AzloadTest@ddea55f11b3251006c433d3a8bfc35e32163a4d5
         with: 
           testname: demo123
           tenantid: 72f988bf-86f1-41af-91ab-2d7cd011db47
