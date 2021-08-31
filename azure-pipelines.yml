@@ -15,6 +15,10 @@ jobs:
     inputs:
       versionSpec: '16.x'
     displayName: 'Install Node.js'
+  
+  - bash: |
+      echo $(System.DefaultWorkingDirectory)
+      echo "dfrehftrjgSFHJJKLGGFRDGBJJKUH\n"
 
 
   - task: AzloadTest@1
