@@ -18,14 +18,10 @@ jobs:
       versionSpec: '16.x'
     displayName: 'Install Node.js'
   
-  
-
-
   - task: AzloadTest@1
     inputs:
-      testname: 'sample12cnttest'
+      testname: 'sample21cnttest'
       tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
-      sourceDir: '$(Build.SourcesDirectory)'
       TestPlan: 'valid.jmx'
       subscription: '7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a'
       loadTestRes: 'cloudtestres'
