@@ -20,7 +20,7 @@ jobs:
   
   - task: AzloadTest@1
     inputs:
-      testname: 'sample01cltaztest'
+      testname: 'sample0111clttest'
       tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
       TestPlan: 'valid.jmx'
       subscription: '7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a'
