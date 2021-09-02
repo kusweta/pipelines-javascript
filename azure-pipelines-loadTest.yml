@@ -23,7 +23,8 @@ steps:
     loadTestRes: 'cloudtestres'
     resourcegroup: 'requestworkerdev'
     monitor: |
-      {
-           resourceId: 
-      }
+      resoucreId1: sample resource1
+      name: sampleName1,
+       resoucreId2: sample resource2
+      name: sampleName2
     apikey: '$(apikey)'
