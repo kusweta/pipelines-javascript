@@ -15,14 +15,3 @@ steps:
     versionSpec: '12'
   displayName: 'Install Node.js'
 
-- task: MicrosoftAzLoadTest@1
-  inputs:
-    subscription: '$(azureSubscription)'
-    yamlFile: 'loadTest.yaml'
-    loadTestRes: 'cloudtestres'
-    resourcegroup: 'requestworkerdev'
-    monitor: |
-      resourceId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/abhi-azload/providers/Microsoft.Storage/storageAccounts/abhiazload
-      resourceName: Storage Account,
-      resourceId: /subscriptions/d03b04c7-d1d4-467b-aaaa-87b6fcb38b38/resourceGroups/Application-Insights-Telemetry/providers/microsoft.insights/components/application-insights-telemetry
-      resourceName: application-insights-telemetry
