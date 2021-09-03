@@ -14,13 +14,4 @@ steps:
   inputs:
     versionSpec: '12'
   displayName: 'Install Node.js'
-- task: loadTest@1
-  inputs:
-    tenantId: '$(tenantId)'
-    yamlFile: 'loadTest.yaml'
-    subscription: '$(azureSubscription)'
-    loadTestRes: 'cloudtestres'
-    resourcegroup: 'requestworkerdev'
-    monitor: |
-      resourceId: /subscriptions/7c71b563-0dc0-4bc0-bcf6-06f8f0516c7a/resourceGroups/abhi-azload/providers/Microsoft.Storage/storageAccounts/abhiazload
-      resourceName: Storage Account
+
