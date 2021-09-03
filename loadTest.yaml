@@ -1,5 +1,5 @@
 version: v0.1
-testName: sampleAppCnt14Test
+testName: sampleAppCnt16Test
 testPlan: valid.jmx
 configurationFiles:
   - '*.csv'
