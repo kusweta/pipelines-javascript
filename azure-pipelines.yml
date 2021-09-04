@@ -21,5 +21,4 @@ steps:
     loadtestFile: 'loadTest.yaml'
     name: 'cloudtestres'
     resourceGroup: 'requestworkerdev'
-    monitorResourceGroups: '$(monitorResourceGroups)'
 
