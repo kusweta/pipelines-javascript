@@ -14,11 +14,3 @@ steps:
   inputs:
     versionSpec: '12'
   displayName: 'Install Node.js'
-
-- task: AzureLoadTest@1
-  inputs:
-    azureSubscription: '$(azureSubscription)'
-    loadtestFile: 'loadTest.yaml'
-    name: 'cloudtestres'
-    resourceGroup: 'requestworkerdev'
-    monitorResourceGroups: '$(monitorResourceGroups)'
