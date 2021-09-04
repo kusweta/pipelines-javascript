@@ -18,7 +18,7 @@ steps:
 - task: AzureLoadTest@1
   inputs:
     azureSubscription: '$(azureSubscription)'
-    loadtestFile: 'loadTest.yaml'
+    loadtestFile: 'SampleApp.yaml'
     loadtestResource: 'cloudtestres'
     resourceGroup: 'requestworkerdev'
     monitorResourceGroups: '$(monitorResourceGroups)'
