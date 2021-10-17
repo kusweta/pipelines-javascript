@@ -17,8 +17,29 @@ steps:
 
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: '$(azureSubscription)'
-    loadtestFile: 'loadTest.yaml'
-    loadtestResource: 'cloudtestres'
+    azureSubscription: 'myorgsvc'
+    YAMLFilePath: 'TmpFiles\loadTest.yaml'
+    secrets: |
+      [
+         {
+          "name": "key1",
+          "value": "(secret1)"
+         },
+         {
+          "name": "key2",
+          "value": "(secret2)"
+         }
+      ]
+    env: |
+      [
+         {
+          "name": "env1",
+          "value": "value1"
+         },
+         {
+          "name": "env2",
+          "value": "value2"
+         }
+      ]
     resourceGroup: 'requestworkerdev'
-    monitorResourceGroups: '$(monitorResourceGroups)'
+    loadtestResource: 'cloudtestres'
