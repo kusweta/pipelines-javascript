@@ -17,29 +17,14 @@ steps:
 
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: 'myorgsvc'
-    YAMLFilePath: 'TmpFiles/loadTest.yaml'
+    azureSubscription: 'svcrwdev'
+    YAMLFilePath: 'TmpFiles\loadTest.yaml'
     secrets: |
       [
          {
-          "name": "key1",
-          "value": "(secret1)"
-         },
-         {
-          "name": "key2",
-          "value": "(secret2)"
+          "name": "secret",
+          "value": "1797669089"
          }
       ]
-    env: |
-      [
-         {
-          "name": "env1",
-          "value": "value1"
-         },
-         {
-          "name": "env2",
-          "value": "value2"
-         }
-      ]
-    resourceGroup: 'requestworkerdev'
-    loadtestResource: 'cloudtestres'
+    resourceGroup: 'abc-kc-rg'
+    loadtestResource: 'krchanda'
