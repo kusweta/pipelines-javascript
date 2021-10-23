@@ -1,13 +1,18 @@
 version: v0.1
-testName: sampleazload06test
-testPlan: valid.jmx
+testName: sampleapptest
+testPlan: sampleapp.jmx
 configurationFiles:
   - 'test1.csv'
   - 'test2.csv'
 description: 'SampleApp Test Run'
 engineInstances: 1
-engineSize: S
+engineSize: M
 criteria:
   - avg(response_time) > 200ms, continue
   - rate(error) > 20, continue
   - rate(error) > 10, continue
+env:
+  - name: 'env1'
+    value: 'envValue1'
+  - name: 'env4'
+    value: 'envValue4'
