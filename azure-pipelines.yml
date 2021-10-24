@@ -23,7 +23,7 @@ steps:
       [
          {
           "name": "secret",
-          "value": "1797669089"
+          "value": $(secret)
          }
       ]
     resourceGroup: 'abc-kc-rg'
