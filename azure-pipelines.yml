@@ -17,7 +17,7 @@ steps:
 
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: 'svcrwdev'
+    azureSubscription: 'AzureLoadTesting'
     YAMLFilePath: 'TmpFiles/loadTest.yaml'
     resourceGroup: 'abc-kc-rg'
     loadtestResource: 'krchanda'
