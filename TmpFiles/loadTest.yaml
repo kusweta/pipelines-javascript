@@ -7,10 +7,6 @@ configurationFiles:
 description: 'SampleApp Test Run'
 engineInstances: 1
 engineSize: M
-criteria:
-  - avg(response_time) > 200ms, continue
-  - rate(error) > 20, continue
-  - rate(error) > 10, continue
 secrets:
   - name: 'secret'
     value: 'https://issacnitintest2.vault.azure.net/secrets/secret/249ab2d5db1e4d5c8d288b4d5dbe969b'
