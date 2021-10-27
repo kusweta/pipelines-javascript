@@ -18,6 +18,6 @@ steps:
 - task: AzureLoadTest@1
   inputs:
     azureSubscription: 'AzureLoadTesting'
-    YAMLFilePath: 'TmpFiles/loadTest.yaml'
+    loadTestConfigFile: 'TmpFiles/loadTest.yaml'
     resourceGroup: 'abc-kc-rg'
-    loadtestResource: 'krchanda'
+    loadTestResource: 'krchanda'
