@@ -1,5 +1,5 @@
 version: v0.1
-testName: sampleaptest
+testName: sampleappgittest
 testPlan: sampleapp.jmx
 configurationFiles:
   - 'test1.csv'
@@ -7,6 +7,10 @@ configurationFiles:
 description: 'SampleApp Test Run'
 engineInstances: 1
 engineSize: M
+failureCriteria:
+  - avg(response_time_ms) > 200ms, continue
+  - percentage(error) > 20, continue
+  - percentage(error) > 10, continue
 secrets:
   - name: 'secret'
     value: 'https://issacnitintest2.vault.azure.net/secrets/secret/249ab2d5db1e4d5c8d288b4d5dbe969b'
