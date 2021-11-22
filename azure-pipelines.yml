@@ -19,5 +19,5 @@ steps:
   inputs:
     azureSubscription: 'AzureLoadTesting'
     loadTestConfigFile: 'TmpFiles/loadTest.yaml'
-    resourceGroup: 'abc-kc-rg'
-    loadTestResource: 'krchanda'
+    resourceGroup: 'ninallam-loadtest-rg'
+    loadTestResource: 'nikita-prod'
