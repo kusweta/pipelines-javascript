@@ -1,12 +1,12 @@
 version: v0.1
-testName: sampleappactiontest
-testPlan: valid.jmx
+testName: secretprodtest
+testPlan: sampleapp.jmx
 configurationFiles:
   - 'test1.csv'
   - 'test2.csv'
 description: 'SampleApp Test Run'
 engineInstances: 1
-engineSize: M
+engineSize: S
 failureCriteria:
   - avg(response_time_ms) > 200
   - percentage(error) > 20
