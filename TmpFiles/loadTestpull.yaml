@@ -1,0 +1,9 @@
+version: v0.1
+testName: prodtestrun
+testPlan: maltsampleapp.jmx
+configurationFiles:
+  - 'test1.csv'
+  - 'test2.csv'
+description: 'SampleApp Test Run'
+engineInstances: 1
+engineSize: S
