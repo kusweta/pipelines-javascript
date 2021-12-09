@@ -20,7 +20,7 @@ steps:
     azureSubscription: 'AzloadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
     resourceGroup: 'abhi-azload'
-    loadTestResource: 'abhi-useast'
+    loadTestResource: 'abhi-auseast'
     secrets: |
       [
       {
