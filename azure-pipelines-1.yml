@@ -18,6 +18,13 @@ steps:
 - task: AzureLoadTest@1
   inputs:
     azureSubscription: 'AzloadTesting'
-    loadTestConfigFile: 'TmpFiles/loadTestplain.yaml'
+    loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
     resourceGroup: 'nikita-eastus-rg'
     loadTestResource: 'nikita-eastus'
+    secrets: |
+      [
+      {
+        "name": "appToken",
+        "value": "1797669089"
+      }
+      ]
