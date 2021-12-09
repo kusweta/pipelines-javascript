@@ -19,8 +19,8 @@ steps:
   inputs:
     azureSubscription: 'AzloadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
-    resourceGroup: 'nikita-eastus-rg'
-    loadTestResource: 'nikita-eastus'
+    resourceGroup: 'ninallam-loadtest-rg'
+    loadTestResource: 'nikita-prod'
     secrets: |
       [
       {
