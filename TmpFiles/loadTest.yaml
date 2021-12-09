@@ -1,6 +1,6 @@
 version: v0.1
 testName: secretprod0test
-testPlan: sampleapp.jmx
+testPlan: SampleApp_Secrets.jmx
 configurationFiles:
   - 'test1.csv'
   - 'test2.csv'
