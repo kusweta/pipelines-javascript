@@ -21,10 +21,3 @@ steps:
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
     resourceGroup: 'mrinal'
     loadTestResource: 'NEU_resource'
-    secrets: |
-      [
-      {
-        "name": "appToken",
-        "value": "1797669089"
-      }
-      ]
