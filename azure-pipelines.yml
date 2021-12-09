@@ -19,5 +19,12 @@ steps:
   inputs:
     azureSubscription: 'AzureLoadTesting'
     loadTestConfigFile: 'TmpFiles/loadTest.yaml'
-    resourceGroup: 'ninallam-loadtest-rg'
-    loadTestResource: 'nikita-prod'
+    resourceGroup: 'nikita-eastus-rg'
+    loadTestResource: 'nikita-eastus'
+    secrets: |
+      [
+         {
+          "name": "appToken",
+          "value": "1797669089"
+         }
+      ]
