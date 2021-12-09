@@ -19,8 +19,8 @@ steps:
   inputs:
     azureSubscription: 'AzloadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
-    resourceGroup: 'abhi-azload'
-    loadTestResource: 'abhi-auseast'
+    resourceGroup: 'mrinal'
+    loadTestResource: 'NEU_resource'
     secrets: |
       [
       {
