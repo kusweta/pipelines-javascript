@@ -1,0 +1,51 @@
+{
+    "manifestVersion": 1,
+    "id": "AzLoadTesting",
+    "name": "Azure Load Testing",
+    "version": "1.1.66",
+    "publisher": "AzloadTest",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Automate load tests from Azure Pipelines using Azure Load testing",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://docs.microsoft.com/azure/load-testing"
+        }
+    },    
+    "files": [
+        {
+            "path": "src"
+        }
+    ],
+    "tags": [
+        "Azure Load Testing",
+        "Azure",
+        "Load Test"
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "src"
+            }
+        }
+    ]
+}
