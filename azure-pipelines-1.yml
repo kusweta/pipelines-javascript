@@ -19,5 +19,5 @@ steps:
   inputs:
     azureSubscription: 'AzloadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
-    resourceGroup: 'mrinal'
-    loadTestResource: 'NEU_resource'
+    resourceGroup: 'nikita-rg'
+    loadTestResource: 'secret-neu'
