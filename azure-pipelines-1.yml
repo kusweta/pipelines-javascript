@@ -21,3 +21,10 @@ steps:
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
     resourceGroup: 'nikita-rg'
     loadTestResource: 'secret-neu'
+    secrets: |
+      [
+      {
+        "name": "appToken",
+        "value": "1797669089"
+      }
+      ]
