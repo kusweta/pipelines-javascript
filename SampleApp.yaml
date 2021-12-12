@@ -1,6 +1,6 @@
 version: v0.1
 testName: Sample00Pipeline
-testPlan: SampleApp.jmx
+testPlan: valid.jmx
 description: 'SampleApp Test Run'
 engineInstances: 1
 engineSize: M
