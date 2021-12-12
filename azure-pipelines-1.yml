@@ -17,7 +17,7 @@ steps:
 
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: 'AzureLoadTesting'
+    azureSubscription: 'AzLoadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
     resourceGroup: 'nikita-eastus-rg'
     loadTestResource: 'nikita-eastus'
