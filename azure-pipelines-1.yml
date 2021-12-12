@@ -18,6 +18,6 @@ steps:
 - task: AzureLoadTest@1
   inputs:
     azureSubscription: 'AzloadTesting'
-    loadTestConfigFile: 'SamplaApp.yaml'
+    loadTestConfigFile: 'SampleApp.yaml'
     resourceGroup: 'ninallam-loadtest-rg'
     loadTestResource: 'nikita-prod'
