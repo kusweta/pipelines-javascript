@@ -1,9 +1,11 @@
 version: v0.1
 testName: prodtestrun
-testPlan: maltsampleapp.jmx
+testPlan: SampleApp_secrets.jmx
 configurationFiles:
   - 'test1.csv'
   - 'test2.csv'
 description: 'SampleApp Test Run'
 engineInstances: 1
-engineSize: S
+secrets:
+  - name: appToken
+  - value: https://secret-eastus.vault.azure.net/secrets/appToken/b91b7386d4354be3be00121be86a228f
