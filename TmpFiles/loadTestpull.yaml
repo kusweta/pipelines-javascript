@@ -8,4 +8,4 @@ description: 'SampleApp Test Run'
 engineInstances: 1
 secrets:
   - name: appToken
-  - value: https://secret-eastus.vault.azure.net/secrets/appToken/b91b7386d4354be3be00121be86a228f
+    value: https://secret-eastus.vault.azure.net/secrets/appToken/b91b7386d4354be3be00121be86a228f
