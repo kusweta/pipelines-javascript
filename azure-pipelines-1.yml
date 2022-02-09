@@ -17,14 +17,14 @@ steps:
 
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: 'AzLoadTesting'
-    loadTestConfigFile: 'TmpFiles/loadTestPush.yaml'
+    azureSubscription: 'AzloadTesting'
+    loadTestConfigFile: 'TmpFiles/loadTestpull.yaml'
     resourceGroup: 'nikita-eastus-rg'
     loadTestResource: 'nikita-eastus'
     secrets: |
       [
-         {
-          "name": "appToken",
-          "value": "1797669089"
-         }
+        {
+        "name": "appToken",
+        "value": "1797669089"
+        }
       ]
