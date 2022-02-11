@@ -21,10 +21,3 @@ steps:
     loadTestConfigFile: 'TmpFiles/loadTestpull.yaml'
     resourceGroup: 'nikita-eastus-rg'
     loadTestResource: 'nikita-eastus'
-    secrets: |
-      [
-        {
-        "name": "appToken",
-        "value": "1797669089"
-        }
-      ]
