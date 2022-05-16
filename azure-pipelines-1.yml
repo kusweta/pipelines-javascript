@@ -17,7 +17,7 @@ steps:
 
 - task: AzureLoadTest@1
   inputs:
-    azureSubscription: 'loadsvcdemo'
+    azureSubscription: 'AzureLoadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestplain.yaml'
     resourceGroup: 'azload-eau'
     loadTestResource: 'azloadsweta-eau'
