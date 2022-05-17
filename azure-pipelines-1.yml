@@ -19,5 +19,5 @@ steps:
   inputs:
     azureSubscription: 'AzureLoadTesting'
     loadTestConfigFile: 'TmpFiles/loadTestplain.yaml'
-    resourceGroup: 'azload-eau'
-    loadTestResource: 'azloadsweta-eau'
+    resourceGroup: 'azload-eus'
+    loadTestResource: 'azloadsweta-eus'
